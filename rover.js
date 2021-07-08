@@ -25,7 +25,7 @@ class Rover {
        this.mode = message.commands[i].value;
        response.results.push({completed:true})
      }
-     else if (message.commads[i].commandType === 'MOVE'){
+     else if (message.commands[i].commandType === 'MOVE'){
        if(this.mode === 'LOW_POWER') {
          response.results.push({completed:false});
        } else {
