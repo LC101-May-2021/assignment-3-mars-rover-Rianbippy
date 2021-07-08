@@ -10,11 +10,13 @@ class Rover {
     message: message.name,
     results: []
     }
+
     let roverStatus={
       mode: this.mode,
       generatorWatts: this.generatorWatts,
       position: this.position
     }
+    
    let cmdarray = message.commands;
 
    for(let i=0; i<cmdarray.length; i++) {
