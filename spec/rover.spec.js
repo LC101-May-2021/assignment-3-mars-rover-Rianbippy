@@ -64,10 +64,10 @@ describe("Rover class", function() {
 
   //test 13...
   it ("responds with position for move command", function() {
-    let commands = [new Command('MOVE', 1234)];
+    let commands = [new Command('MOVE', 4321)];
     let message = new Message('Test message with two commands', commands);
     let rover = new Rover(98382);
     let response = rover.receiveMessage(message);
-    expect(rover.position).toEqual(1234);
+    expect(rover.position).toEqual(4321);
   });
 });
