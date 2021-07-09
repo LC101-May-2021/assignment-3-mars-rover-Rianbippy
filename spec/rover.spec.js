@@ -32,7 +32,8 @@ describe("Rover class", function() {
     let message = new Message('Test message with two commands', commands);
     let rover = new Rover(98382);
     let response = rover.receiveMessage(message);
-  });
+    expect(response.results.length).toEqual(1);
+      });
   
   // test 10
   it ("responds correctly to status check command", function() {
